@@ -15,7 +15,7 @@ namespace TableStorageHandsOn
             this.BirthDate = DateTime.Now;
         }
 
-        public CustomerEntity(string country, string name)
+        public CustomerEntity(string country, string name):this()
         {
             this.PartitionKey = country;
             this.RowKey = name;
